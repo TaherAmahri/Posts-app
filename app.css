@@ -1,0 +1,55 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width:auto;
+    margin: auto;
+}
+h1{
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: small;
+    color: rgb(133, 136, 136);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#posts{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#posts>.card{
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 11px;
+    border: 1px solid rgb(210, 206, 206);
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.01);
+	box-shadow: 0px 0px 5px 0 #0000002c;
+    
+}
+.card-img-top{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    padding: 3px 0;
+}
+.card-title,
+.card-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
